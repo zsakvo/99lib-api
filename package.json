@@ -1,0 +1,23 @@
+{
+  "name": "99lib4yd",
+  "version": "1.0.0",
+  "description": "provide 99books for YueDu app",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "99lib",
+    "YueDu"
+  ],
+  "author": "zsakvo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "socks-proxy-agent": "^4.0.1"
+  }
+}
