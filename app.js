@@ -18,19 +18,19 @@ app.listen(config.port);
 app.get("/book/search", async function(req, res) {
   var keyword = req.query.keyword;
   var page = req.query.page;
-  res.write(await gs(keyword, page));
+  res.json(await gs(keyword, page));
   res.end();
 });
 
 app.get(/^\/book\/(\d+)\/index\.htm$/, async function(req, res) {
   var bid = req.url.split("/")[2];
-  res.write(await bd(bid));
+  res.json(await bd(bid));
   res.end();
 });
 
 app.get(/^\/book\/(\d+)\/(\d+)\.htm$/, async function(req, res) {
   var bid = req.url.split("/")[2];
   var cid = req.url.split("/")[3];
-  res.write(await gc(bid, cid));
+  res.json(await gc(bid, cid));
   res.end();
 });
