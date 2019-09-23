@@ -1,4 +1,5 @@
 .vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -103,3 +104,4 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
